@@ -50,5 +50,43 @@ a {
 }
 .image img{
   max-width: 100%;
-  max-height: 280px;
+}
+#idApresentacao{
+  margin-top: 3rem;
+}
+.card-SobreMim{
+  height: 650px;
+}
+.card-relato{
+  height: 280px;
+}
+.media img{
+  border-radius: 10%;
+}
+@media screen and (max-width: 1180px) {
+  #idApresentacao{ 
+    margin-top: -4rem;
+  }
+  .card-relato{
+    height: auto;
+  }
+  .card-SobreMim{
+    height: auto;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .card-SobreMim{
+    height: 660px;
+  }
+  .card-relato{
+    height: 230px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .card-SobreMim{
+    height: 750px;
+  }
+  .card-relato{
+    height: 200px;
+  }
 }
