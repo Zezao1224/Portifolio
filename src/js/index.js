@@ -1,4 +1,10 @@
 $(document).ready(function() {
+  const currentPath = window.location.pathname;
+    $('.navbar-item').each(function() {
+        if ($(this).attr('href') === currentPath) {
+            $(this).addClass('is-active');
+        }
+    });
 
     // Check for click events on the navbar burger icon
     $(".navbar-burger").click(function() {

@@ -4,12 +4,23 @@ body {
   font-size: 16px;
   line-height: 1.6;
 }
+#principais:hover{
+  background-color:#2323ff;
+  color: white;
+  cursor: pointer;
+}
+#principais label:hover{
+  cursor: pointer;
+}
 a {
     text-decoration: none;
     color: white;
   }
 #navbar-links{ 
   background-color: #080F2D
+}
+.navbar-menu {
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 .navbar-menu a :hover{
   color: #090F29
@@ -43,6 +54,11 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+.casesSucesso{
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
 .relatos{
   max-width: 95%;
   margin-left: auto;
@@ -52,9 +68,12 @@ a {
   max-width: 100%;
 }
 #idApresentacao{
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 .card-SobreMim{
+  height: 650px;
+}
+.card-case{
   height: 650px;
 }
 .card-relato{
@@ -65,7 +84,7 @@ a {
 }
 @media screen and (max-width: 1180px) {
   #idApresentacao{ 
-    margin-top: -4rem;
+    margin-top: -3rem;
   }
   .card-relato{
     height: auto;
@@ -73,9 +92,15 @@ a {
   .card-SobreMim{
     height: auto;
   }
+  .card-case{
+    height: auto;
+  }
 }
 @media screen and (min-width: 1500px) {
   .card-SobreMim{
+    height: 660px;
+  }
+  .card-case{
     height: 660px;
   }
   .card-relato{
@@ -84,6 +109,9 @@ a {
 }
 @media screen and (min-width: 1920px) {
   .card-SobreMim{
+    height: 750px;
+  }
+  .card-case{
     height: 750px;
   }
   .card-relato{
