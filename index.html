@@ -7,17 +7,19 @@
     <link rel="stylesheet" href="src/libs/bulma/css/bulma.min.css">
     <link rel="stylesheet" href="src/libs/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.min.css">
     <link rel="stylesheet" href="src/styles/index.css">
+    <link rel="stylesheet" href="src/styles/autoScroll.css">
 </head>
 <body>
 <section id="heroBackGround" class="hero" >
     <section id="HeroNav" class="hero" >
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="navbar-brand" >
         <i class="navbar-item fa-solid fa-b mt-3 ml-3" style="color: #2323ff;"></i> 
         <a role="button" 
            class="navbar-burger"
            aria-label="menu" 
            aria-expanded="false"
+           data-target="navbar-links"
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -27,17 +29,17 @@
       </div>
       <div id="navbar-links" class="navbar-menu">
         <div class="navbar-start ml-auto">
-            <a class="navbar-item" href="index.html">
+            <a id="principais" class="navbar-item" href="index.html">
                 <i class="fa-solid fa-house"></i>
-                <label class="mt-1">Home</label>
+                <span class="ml-2">Home</span>
             </a>
-            <a class="navbar-item" href="list.html">
+            <a id="principais" class="navbar-item" href="list.html">
                 <i class="fa-solid fa-address-card"></i>
-                <label class="mt-1">Sobre</label>
+                <span class="ml-2">Sobre</span>
             </a>
-            <a class="navbar-item" href="search.html">
+            <a id="principais" class="navbar-item" href="search.html">
                 <i class="fa-solid fa-address-book"></i>
-                <label class="mt-1">Contato</label>
+                <span class="ml-2">Contato</span>
             </a>
          </div>
       </div>
@@ -45,8 +47,9 @@
         <div class="hero-body">
             <div class="columns">
                 <div id="idApresentacao" class="column">
-                    <p class="title mt-6">Seu novo Dev full-stack!</p>
-                    <p class="subtitle">Prazer em te conhecer !! <br>
+                    <p class="title mt-6">Seu novo Dev Full-Stack!</p>
+                    <p class="subtitle">Bruno Luiz de Souza<br>
+                      Prazer em te conhecer !! <br></p> 
                 </div>
                 <div class="column">
                     <img id="fotoPerfil" src="src/imgs/Foto_Perfil_SemFundo.png">
@@ -55,7 +58,7 @@
         </div>
     </section>
 </section>
-<div class="columns mt-6">
+<div class="columns mt-4">
     <div class="column">
         <center>
             <p class="title">Um pouco sobre mim!</p>
@@ -126,9 +129,11 @@
                     </div>
                   </div>
                   <div class="content">
-                    Sou um desenvolvedor apaixonado por tecnologia e programação. 
-                    Minha missão é transformar ideias em soluções inovadoras e 
-                    compartilhar o que sei com a comunidade.
+                    <p>Acredito no aprimoramento constante como chave para excelência. 
+                    Dedico-me ao estudo contínuo de novas tecnologias e metodologias, 
+                    transformando conhecimento em soluções inovadoras e eficientes. 
+                    Este portfólio reflete minha evolução profissional e meu compromisso em sempre ir além.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -160,16 +165,13 @@
                     </div>
                   </div>
                   <div class="content">
-                    Sou um desenvolvedor apaixonado por tecnologia e programação. 
-                    Minha missão é transformar ideias em soluções inovadoras e 
-                    compartilhar o que sei com a comunidade.
+                  Quando compartilhamos nossas experiências, erros e sucessos, criamos um ambiente onde todos crescem. Por isso, me dedico a contribuir ativamente
                   </div>
                 </div>
               </div>
         </div>
     </div>
 </div>
-
 <div class="columns ml-3 mt-6">
     <div class="column">
         <center>
@@ -177,7 +179,6 @@
         </center>
     </div>
 </div>
-
 <section id="heroPaiRelatos"class="hero">
     <section id="heroFilhoRelatos" class="hero">
         <div class="columns relatos mt-6 mb-6">
@@ -277,8 +278,10 @@
         </div>
     </section>
 </section>
+
 <script src="src/libs/jquery/jquery-3.7.1.min.js"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="src/js/index.js"></script>
+<script src="src/js/autoScroll.js"></script>
 </body>
 </html>
